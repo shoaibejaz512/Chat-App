@@ -1,0 +1,61 @@
+
+
+@font-face {
+    font-family: font1;
+    src: url(../assets/fonts/font1.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(../assets/fonts/font2.ttf);
+}
+
+.login-container{
+    position: relative;
+    z-index: 0 !important;
+}
+
+.login-container::after,
+.login-container::before{
+    z-index: -1 !important;
+}
+
+
+.login-container::before{
+    position: absolute;
+    content: "";
+    inset: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: conic-gradient(
+        #06b6d4 0deg ,
+        transparent 60deg,
+        transparent 180deg,
+        #06b6d4 180deg,
+        transparent 270deg
+    );
+    animation: border 8s linear infinite;
+}
+
+.login-container::after{
+    position: absolute;
+    content: "";
+    width: 98%;
+    height: 98%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #020617;
+    border-radius: 10px;
+}
+@keyframes border {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(-180deg);
+    }
+    100%{
+        transform: rotateZ(-360deg);
+    }
+}
