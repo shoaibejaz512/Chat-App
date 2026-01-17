@@ -19,7 +19,7 @@ const App = () => {
     );
   }else{
   return (
-    <div className='bg-[url(./src/assets/bgImage.svg)] w-full h-screen object-cover'>
+    <div className="bg-[url('/bgImage.svg')] w-full h-screen object-cover">
       <Toaster/>
         <Routes>
           {/* <Route path='/create' element={
