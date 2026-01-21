@@ -4,8 +4,6 @@ A **full-stack real-time chat application** built using the **MERN stack** and *
 
 ---
 
-LIVE DEMO:
-
 ## 🚀 Features
 
 - 🔐 Secure user authentication & authorization (JWT)
